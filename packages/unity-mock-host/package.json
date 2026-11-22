@@ -1,0 +1,18 @@
+{
+  "name": "@kaleido/unity-mock-host",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Standalone mock Unity WebGL host — stands in for the real module in dev and demo.",
+  "main": "./src/index.ts",
+  "scripts": {
+    "lint": "echo 'no lint in @kaleido/unity-mock-host'",
+    "typecheck": "tsc --noEmit",
+    "test": "echo 'no tests yet'"
+  },
+  "dependencies": {
+    "@kaleido/unity-contract": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

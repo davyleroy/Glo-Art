@@ -1,0 +1,113 @@
+{
+  "app": {
+    "brand": "Kaleido",
+    "tagline": "Isoko mpuzamahanga y'ubugeni, uzahimenya ugendamo."
+  },
+  "nav": {
+    "home": "Ahabanza",
+    "discover": "Shakisha",
+    "galleries": "Imurikagurisha",
+    "sell": "Gurisha kuri Kaleido",
+    "login": "Injira",
+    "register": "Fungura konti",
+    "logout": "Sohoka",
+    "dashboard": "Ikibaho cyawe",
+    "admin": "Ubuyobozi",
+    "moderation": "Ubugenzuzi",
+    "artistStudio": "Agace k'umuhanzi",
+    "curatorStudio": "Agace k'umutegura"
+  },
+  "locale": {
+    "label": "Ururimi",
+    "switchTo": "Hindura ujye kuri {name}"
+  },
+  "common": {
+    "loading": "Birimo gupakira...",
+    "submit": "Ohereza",
+    "cancel": "Hagarika",
+    "continue": "Komeza",
+    "back": "Subira inyuma",
+    "email": "Imeyili",
+    "password": "Ijambo ry'ibanga",
+    "or": "cyangwa",
+    "optional": "bidasabwa"
+  },
+  "home": {
+    "heroEyebrow": "Icyiciro cya 0 — Urufatiro",
+    "heroTitle": "Isoko yizewe y'ubugeni buva mu turere dukeneye kugaragara.",
+    "heroBody": "Abaguzi bagendera mu imurikagurisha ry'ikoranabuhanga ryakozwe n'abatezimbere ubugeni, bareba uko ubuhanzi bwakwiyoroshya mu nzu yabo bakoresheje AR, kandi bakagura bafite ikizere. Abahanzi bagera ku bakiriya ku isi hose bakishyurwa mu buryo bwizewe.",
+    "ctaExplore": "Reba isoko",
+    "ctaJoin": "Fungura konti"
+  },
+  "auth": {
+    "register": {
+      "title": "Fungura konti yawe",
+      "subtitle": "Konti imwe yo gushakisha, kugura, no kugurisha.",
+      "displayName": "Izina rigaragara",
+      "username": "Izina ry'ukoresha",
+      "usernameHelp": "Inyuguti, imibare, na underscore. Inyuguti 3 kugeza 32.",
+      "acceptTerms": "Nemeye Amabwiriza n'Ipolisi y'Ibanga.",
+      "cta": "Fungura konti",
+      "haveAccount": "Usanzwe ufite konti?",
+      "signIn": "Injira",
+      "googleCta": "Komeza ukoresheje Google",
+      "successTitle": "Reba imeyili yawe",
+      "successBody": "Twohereje umugereka wo kwemeza kuri {email}. Urangira mu minota 30."
+    },
+    "login": {
+      "title": "Ikaze garuka",
+      "subtitle": "Injira muri konti yawe ya {brand}.",
+      "cta": "Injira",
+      "noAccount": "Nta konti ufite?",
+      "register": "Ifungure",
+      "forgot": "Wibagiwe ijambo ry'ibanga?",
+      "googleCta": "Komeza ukoresheje Google",
+      "invalid": "Iyo meyili n'ijambo ry'ibanga bidahuje konti iriho."
+    },
+    "verify": {
+      "pendingTitle": "Emeza imeyili yawe",
+      "pendingBody": "Fungura umugereka twakwohereje kugira ngo wemeze imeyili yawe. Mu iterambere, suzuma MailHog kuri http://localhost:8025.",
+      "resend": "Ongera wohereze imeyili yo kwemeza",
+      "resendSent": "Niba konti iriho kuri iyo meyili, umugereka mushya uraje.",
+      "successTitle": "Imeyili yemejwe",
+      "successBody": "Imeyili yawe yemejwe. Ushobora kugura no gutera kuri {brand}.",
+      "successCta": "Komeza kuri {brand}",
+      "invalidTitle": "Uyu mugereka ntabwo ari wo",
+      "invalidBody": "Umugereka wo kwemeza ntabwo ari wo cyangwa wamaze gukoreshwa. Saba undi mushya.",
+      "expiredTitle": "Uyu mugereka warangiye",
+      "expiredBody": "Umugereka wo kwemeza umara iminota 30. Saba undi mushya."
+    },
+    "banner": {
+      "unverifiedTitle": "Emeza imeyili yawe kugira ngo utere kandi ugure.",
+      "unverifiedBody": "Twohereje umugereka kuri {email}.",
+      "resendCta": "Ongera wohereze imeyili yo kwemeza"
+    }
+  },
+  "errors": {
+    "unknown": "Habaye ikibazo. Ongera ugerageze.",
+    "network": "Ikibazo cya murandasi. Suzuma umurongo wawe.",
+    "emailAlreadyRegistered": "Konti isanzwe iriho kuri iyo meyili.",
+    "email": { "invalid": "Andika imeyili yemewe." },
+    "password": {
+      "required": "Andika ijambo ry'ibanga.",
+      "tooShort": "Ijambo ry'ibanga rigomba kuba rifite byibura inyuguti 12.",
+      "tooLong": "Ijambo ry'ibanga rirerire cyane.",
+      "weak": "Ijambo ry'ibanga rigomba kuba rikubiyemo inyuguti n'imibare."
+    },
+    "username": {
+      "tooShort": "Izina ry'ukoresha rigomba kuba rifite byibura inyuguti 3.",
+      "tooLong": "Izina ry'ukoresha ntirigomba kurenga inyuguti 32.",
+      "invalidChars": "Koresha gusa inyuguti, imibare, na underscore.",
+      "taken": "Iryo zina ry'ukoresha rimaze gufatwa."
+    },
+    "displayName": { "required": "Andika izina rigaragara." },
+    "terms": { "required": "Ugomba kwemera Amabwiriza kugira ngo ukomeze." }
+  },
+  "footer": {
+    "about": "Abo turi bo",
+    "terms": "Amabwiriza",
+    "privacy": "Ibanga",
+    "contact": "Twandikire",
+    "copyright": "© {year} {brand}. Umushinga wa capstone — ubwishyu bwo kugerageza gusa."
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "app": {
+    "brand": "Kaleido",
+    "tagline": "A global art marketplace, discovered by walking through it."
+  },
+  "nav": {
+    "home": "Home",
+    "discover": "Discover",
+    "galleries": "Galleries",
+    "sell": "Sell on Kaleido",
+    "login": "Log in",
+    "register": "Sign up",
+    "logout": "Log out",
+    "dashboard": "Dashboard",
+    "admin": "Admin",
+    "moderation": "Moderation",
+    "artistStudio": "Artist studio",
+    "curatorStudio": "Curator studio"
+  },
+  "locale": {
+    "label": "Language",
+    "switchTo": "Switch to {name}"
+  },
+  "common": {
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "email": "Email",
+    "password": "Password",
+    "or": "or",
+    "optional": "optional"
+  },
+  "home": {
+    "heroEyebrow": "Phase 0 — Foundation",
+    "heroTitle": "A trusted global marketplace for art from underrepresented regions.",
+    "heroBody": "Buyers walk through curator-built virtual galleries, preview art in their own room with AR, and buy with confidence. Artists reach a global audience and get paid safely.",
+    "ctaExplore": "Explore the catalog",
+    "ctaJoin": "Create an account"
+  },
+  "auth": {
+    "register": {
+      "title": "Create your account",
+      "subtitle": "One account to browse, bid, buy, and sell.",
+      "displayName": "Display name",
+      "username": "Username",
+      "usernameHelp": "Letters, numbers, and underscores. 3–32 characters.",
+      "acceptTerms": "I agree to the Terms and Privacy Policy.",
+      "cta": "Create account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "googleCta": "Continue with Google",
+      "successTitle": "Check your inbox",
+      "successBody": "We sent a verification link to {email}. It expires in 30 minutes."
+    },
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to your {brand} account.",
+      "cta": "Sign in",
+      "noAccount": "Don't have an account yet?",
+      "register": "Create one",
+      "forgot": "Forgot your password?",
+      "googleCta": "Continue with Google",
+      "invalid": "That email and password don't match any account."
+    },
+    "verify": {
+      "pendingTitle": "Verify your email",
+      "pendingBody": "Open the link we sent to confirm your email. In development, check the MailHog inbox at http://localhost:8025.",
+      "resend": "Resend the verification email",
+      "resendSent": "If an account exists for that email, a new link is on its way.",
+      "successTitle": "Email verified",
+      "successBody": "Your email is verified. You can now bid and buy on {brand}.",
+      "successCta": "Continue to {brand}",
+      "invalidTitle": "This link isn't valid",
+      "invalidBody": "The verification link is invalid or has already been used. Ask for a new one.",
+      "expiredTitle": "This link has expired",
+      "expiredBody": "Verification links last 30 minutes. Ask for a new one."
+    },
+    "banner": {
+      "unverifiedTitle": "Verify your email to unlock bidding and buying.",
+      "unverifiedBody": "We sent a link to {email}.",
+      "resendCta": "Resend verification email"
+    }
+  },
+  "errors": {
+    "unknown": "Something went wrong. Please try again.",
+    "network": "Network error. Check your connection.",
+    "emailAlreadyRegistered": "An account already exists for that email.",
+    "email": { "invalid": "Enter a valid email." },
+    "password": {
+      "required": "Enter your password.",
+      "tooShort": "Password must be at least 12 characters.",
+      "tooLong": "Password is too long.",
+      "weak": "Password must include letters and numbers."
+    },
+    "username": {
+      "tooShort": "Username must be at least 3 characters.",
+      "tooLong": "Username must be at most 32 characters.",
+      "invalidChars": "Use only letters, numbers, and underscores.",
+      "taken": "That username is already taken."
+    },
+    "displayName": { "required": "Enter a display name." },
+    "terms": { "required": "You must accept the Terms to continue." }
+  },
+  "footer": {
+    "about": "About",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "copyright": "© {year} {brand}. Capstone project — sandbox payments only."
+  }
+}

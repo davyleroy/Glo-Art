@@ -1,0 +1,113 @@
+{
+  "app": {
+    "brand": "Kaleido",
+    "tagline": "Un marché mondial de l'art, qu'on découvre en s'y promenant."
+  },
+  "nav": {
+    "home": "Accueil",
+    "discover": "Découvrir",
+    "galleries": "Galeries",
+    "sell": "Vendre sur Kaleido",
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "logout": "Se déconnecter",
+    "dashboard": "Tableau de bord",
+    "admin": "Administration",
+    "moderation": "Modération",
+    "artistStudio": "Espace artiste",
+    "curatorStudio": "Espace commissaire"
+  },
+  "locale": {
+    "label": "Langue",
+    "switchTo": "Passer au {name}"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "submit": "Envoyer",
+    "cancel": "Annuler",
+    "continue": "Continuer",
+    "back": "Retour",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "or": "ou",
+    "optional": "facultatif"
+  },
+  "home": {
+    "heroEyebrow": "Phase 0 — Fondations",
+    "heroTitle": "Un marché de confiance pour l'art des régions sous-représentées.",
+    "heroBody": "Les acheteurs parcourent des galeries virtuelles conçues par des commissaires, prévisualisent les œuvres chez eux en réalité augmentée et achètent en toute confiance. Les artistes atteignent un public mondial et sont payés en toute sécurité.",
+    "ctaExplore": "Explorer le catalogue",
+    "ctaJoin": "Créer un compte"
+  },
+  "auth": {
+    "register": {
+      "title": "Créez votre compte",
+      "subtitle": "Un seul compte pour parcourir, enchérir, acheter et vendre.",
+      "displayName": "Nom affiché",
+      "username": "Nom d'utilisateur",
+      "usernameHelp": "Lettres, chiffres et tirets bas. 3 à 32 caractères.",
+      "acceptTerms": "J'accepte les Conditions et la Politique de confidentialité.",
+      "cta": "Créer le compte",
+      "haveAccount": "Vous avez déjà un compte ?",
+      "signIn": "Se connecter",
+      "googleCta": "Continuer avec Google",
+      "successTitle": "Vérifiez votre boîte de réception",
+      "successBody": "Nous avons envoyé un lien de vérification à {email}. Il expire dans 30 minutes."
+    },
+    "login": {
+      "title": "Bon retour",
+      "subtitle": "Connectez-vous à votre compte {brand}.",
+      "cta": "Se connecter",
+      "noAccount": "Pas encore de compte ?",
+      "register": "Créer un compte",
+      "forgot": "Mot de passe oublié ?",
+      "googleCta": "Continuer avec Google",
+      "invalid": "Cet e-mail et ce mot de passe ne correspondent à aucun compte."
+    },
+    "verify": {
+      "pendingTitle": "Vérifiez votre e-mail",
+      "pendingBody": "Ouvrez le lien que nous avons envoyé pour confirmer votre adresse. En développement, consultez la boîte MailHog sur http://localhost:8025.",
+      "resend": "Renvoyer l'e-mail de vérification",
+      "resendSent": "Si un compte existe pour cet e-mail, un nouveau lien est en route.",
+      "successTitle": "E-mail vérifié",
+      "successBody": "Votre adresse e-mail est vérifiée. Vous pouvez désormais enchérir et acheter sur {brand}.",
+      "successCta": "Continuer vers {brand}",
+      "invalidTitle": "Ce lien n'est pas valide",
+      "invalidBody": "Le lien de vérification est invalide ou déjà utilisé. Demandez-en un nouveau.",
+      "expiredTitle": "Ce lien a expiré",
+      "expiredBody": "Les liens de vérification durent 30 minutes. Demandez-en un nouveau."
+    },
+    "banner": {
+      "unverifiedTitle": "Vérifiez votre e-mail pour débloquer les enchères et les achats.",
+      "unverifiedBody": "Nous avons envoyé un lien à {email}.",
+      "resendCta": "Renvoyer l'e-mail de vérification"
+    }
+  },
+  "errors": {
+    "unknown": "Une erreur est survenue. Réessayez.",
+    "network": "Erreur réseau. Vérifiez votre connexion.",
+    "emailAlreadyRegistered": "Un compte existe déjà pour cet e-mail.",
+    "email": { "invalid": "Saisissez un e-mail valide." },
+    "password": {
+      "required": "Saisissez votre mot de passe.",
+      "tooShort": "Le mot de passe doit comporter au moins 12 caractères.",
+      "tooLong": "Mot de passe trop long.",
+      "weak": "Le mot de passe doit contenir des lettres et des chiffres."
+    },
+    "username": {
+      "tooShort": "Le nom d'utilisateur doit comporter au moins 3 caractères.",
+      "tooLong": "Le nom d'utilisateur doit comporter au plus 32 caractères.",
+      "invalidChars": "Utilisez uniquement des lettres, chiffres et tirets bas.",
+      "taken": "Ce nom d'utilisateur est déjà pris."
+    },
+    "displayName": { "required": "Saisissez un nom affiché." },
+    "terms": { "required": "Vous devez accepter les Conditions pour continuer." }
+  },
+  "footer": {
+    "about": "À propos",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "contact": "Contact",
+    "copyright": "© {year} {brand}. Projet capstone — paiements en bac à sable uniquement."
+  }
+}

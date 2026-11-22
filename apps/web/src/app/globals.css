@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Afro-contemporary gallery palette (spec §14).
+   Earth tones on cream, editorial feel. Tokens are HSL so Tailwind can
+   mix them with alpha via `color/opacity`. */
+@layer base {
+  :root {
+    --bg: 36 46% 96%;            /* cream */
+    --fg: 25 15% 15%;            /* near-black warm */
+    --muted: 36 20% 90%;
+    --muted-fg: 25 10% 35%;
+    --border: 30 20% 80%;
+    --ring: 10 55% 45%;
+
+    --terracotta: 10 55% 48%;
+    --terracotta-fg: 30 35% 97%;
+    --ochre: 38 75% 52%;
+    --ochre-fg: 25 20% 12%;
+    --indigo: 240 35% 32%;
+    --indigo-fg: 30 35% 97%;
+    --forest: 150 22% 25%;
+    --forest-fg: 30 35% 97%;
+
+    --primary: 10 55% 48%;       /* terracotta as primary */
+    --primary-fg: 30 35% 97%;
+    --destructive: 0 70% 45%;
+    --destructive-fg: 0 0% 100%;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background rounded-sm;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  .btn-secondary {
+    @apply btn border border-border bg-background hover:bg-muted;
+  }
+  .btn-ghost {
+    @apply btn hover:bg-muted;
+  }
+  .btn-link {
+    @apply underline underline-offset-4 hover:text-primary;
+  }
+
+  .input {
+    @apply block w-full rounded-md border border-border bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:border-ring;
+  }
+
+  .field-label {
+    @apply mb-1 block text-sm font-medium;
+  }
+
+  .field-error {
+    @apply mt-1 text-sm text-destructive;
+  }
+
+  .card {
+    @apply rounded-lg border border-border bg-background p-6 shadow-sm;
+  }
+}

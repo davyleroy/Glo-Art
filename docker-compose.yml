@@ -1,0 +1,70 @@
+name: kaleido
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: kaleido-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: kaleido
+      POSTGRES_PASSWORD: kaleido
+      POSTGRES_DB: kaleido
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kaleido -d kaleido"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: kaleido-mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025" # SMTP
+      - "8025:8025" # Web UI
+
+  minio:
+    image: minio/minio:latest
+    container_name: kaleido-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Phase 1 will add a minio-init service to pre-create buckets. Phase 0
+  # uses LocalStorageProvider (disk), so MinIO is here for future use only.
+
+  redis:
+    image: redis:7-alpine
+    container_name: kaleido-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pg-data:
+  minio-data:
+  redis-data:

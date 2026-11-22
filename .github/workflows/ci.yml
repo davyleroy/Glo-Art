@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '20'
+  PNPM_VERSION: '9.15.0'
+  # Phase 0: validation runs without real credentials. Providers default to mocks.
+  DATABASE_URL: postgresql://kaleido:kaleido@localhost:5432/kaleido
+  DIRECT_URL: postgresql://kaleido:kaleido@localhost:5432/kaleido
+  AUTH_SECRET: test-secret-at-least-16-chars-for-ci
+  EMAIL_PROVIDER: console
+  STORAGE_PROVIDER: local
+  REALTIME_PROVIDER: memory
+  SKIP_ENV_VALIDATION: '0'
+
+jobs:
+  lint-type-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: kaleido
+          POSTGRES_PASSWORD: kaleido
+          POSTGRES_DB: kaleido
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install
+        run: pnpm install --frozen-lockfile=false
+
+      - name: Prisma generate
+        run: pnpm --filter @kaleido/web prisma generate
+
+      - name: Prisma migrate
+        run: pnpm --filter @kaleido/web prisma migrate deploy
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Unit + integration tests
+        run: pnpm test
+
+      - name: Formatting
+        run: pnpm format:check
