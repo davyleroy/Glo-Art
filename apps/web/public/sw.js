@@ -1,7 +1,7 @@
 // Phase 0 service worker: offline shell only.
 // Phase 5+ will replace this with Serwist precaching + offline shortlist.
 
-const CACHE = 'kaleido-shell-v1';
+const CACHE = 'glo-art-shell-v1';
 const OFFLINE_URL = '/offline';
 
 self.addEventListener('install', (event) => {

@@ -1,4 +1,4 @@
-# Kaleido (codename) — Global Art Marketplace with AR/VR Gallery
+# Glo Art — Global Art Marketplace with AR/VR Gallery
 
 > A web app, installable as a PWA, where artists worldwide sell to buyers worldwide through fixed-price listings and timed auctions, with a Unity-WebGL AR/VR gallery experience.
 
@@ -26,6 +26,11 @@ pnpm dev                                          # http://localhost:3000
 
 Mail inbox (dev): http://localhost:8025
 MinIO console: http://localhost:9001 (user/pass: `minio`/`minio123`)
+
+> **Note:** the internal pnpm package scope is still `@kaleido/*` and the
+> docker containers / local DB are still named `kaleido-*`. These are
+> purely internal; the user-facing brand is **Glo Art** (configured via
+> `BRAND_NAME` in `apps/web/.env`). See ADR-0006.
 
 ## Quality gates
 

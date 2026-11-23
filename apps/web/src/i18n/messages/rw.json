@@ -1,13 +1,13 @@
 {
   "app": {
-    "brand": "Kaleido",
+    "brand": "Glo Art",
     "tagline": "Isoko mpuzamahanga y'ubugeni, uzahimenya ugendamo."
   },
   "nav": {
     "home": "Ahabanza",
     "discover": "Shakisha",
     "galleries": "Imurikagurisha",
-    "sell": "Gurisha kuri Kaleido",
+    "sell": "Gurisha kuri Glo Art",
     "login": "Injira",
     "register": "Fungura konti",
     "logout": "Sohoka",

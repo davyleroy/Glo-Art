@@ -1,5 +1,8 @@
 # CLAUDE.md — Agent operating constraints
 
+Product name: **Glo Art** (was codename "Kaleido" in the spec; see ADR-0006).
+
+
 Source of truth: `productspec.md` and `PRD.md`. This file distills the non-negotiable constraints (spec §0.2) and the Definition of Done (spec §19) that must survive context resets.
 
 ## Non-negotiable constraints (spec §0.2)

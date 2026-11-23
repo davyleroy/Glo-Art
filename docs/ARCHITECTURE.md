@@ -1,4 +1,4 @@
-# Kaleido — Architecture (Phase 0 draft)
+# Glo Art — Architecture (Phase 0 draft)
 
 This document is a living architecture map. Keep it in step with the code.
 

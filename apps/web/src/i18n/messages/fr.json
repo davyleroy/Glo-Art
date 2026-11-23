@@ -1,13 +1,13 @@
 {
   "app": {
-    "brand": "Kaleido",
+    "brand": "Glo Art",
     "tagline": "Un marché mondial de l'art, qu'on découvre en s'y promenant."
   },
   "nav": {
     "home": "Accueil",
     "discover": "Découvrir",
     "galleries": "Galeries",
-    "sell": "Vendre sur Kaleido",
+    "sell": "Vendre sur Glo Art",
     "login": "Se connecter",
     "register": "S'inscrire",
     "logout": "Se déconnecter",
